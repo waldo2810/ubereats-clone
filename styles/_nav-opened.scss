@@ -1,0 +1,120 @@
+/* MENU ACTIVE FOR BLURRING BG */
+.opacity-div{
+    background-color: rgba(38, 38, 38, 0.5);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+/* MENU OPENED */
+.menu-opened{
+    transform: translateX(-100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-between;
+    z-index: 3;
+    background-color: white;
+    transition: 0.4s ease-in-out;
+    visibility: hidden;
+
+    .top, .bottom{
+        width: 90%;
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1.5rem 0rem;
+
+        .menu-login{
+            border: none;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            color: white;
+            background-color: black;
+        }
+        .menu-login:hover{
+            background-color: #2e2e2e;
+        }
+        .menu-links{
+            padding: 1.5rem 0rem;
+            display: flex;
+            flex-direction: column;
+    
+            a{
+                font-size: .9rem;
+                font-weight: 500;
+                color: #000000;
+                text-decoration: none;
+                margin: 10px 0px;
+                text-align: left;
+            }
+        }
+    }
+    .bottom{
+        display: flex;    
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 0rem  3rem 0rem;
+
+        .app{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1rem 2rem;
+    
+            p{
+                font-size: .9rem;
+                font-weight: bold;
+                padding: 6% 0% 6% 7%;
+            }
+            img{
+                height: 3.5rem;
+            }
+        }
+    
+        .platforms{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+    
+            .platform{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 50px;
+                padding: .75rem;
+                background-color: #eeee;
+    
+                a{
+                    font-size: .9rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #000000;
+                }
+                img{
+                    margin: 0px 5px;
+                    height: 1rem;
+                }
+            }
+            
+        }
+    }
+}

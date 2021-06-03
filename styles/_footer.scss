@@ -1,0 +1,104 @@
+footer {
+    padding: 0rem 2.5rem;
+    height: 85vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+    .first-part{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0rem;
+
+        .app{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .stores{
+            display: flex;
+            img{
+                height: 2.5rem;
+                margin: 0px 6px;
+            }
+        }
+
+        .about-help{
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .about, .help{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            a{
+                color: white;
+                text-decoration: none;
+                margin: 10px 0px;
+            }
+            .bold{
+                font-weight: bold;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .second-part{
+        font-size: .9rem;
+        padding: 2rem 0rem;
+
+        .social-terms{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+
+            .social{
+                display: flex;
+                align-items: center;
+                a{
+                    margin: 10px;
+                }
+                img{
+                    height: 1rem;
+                }
+            }
+            .terms{
+                width: 100%;
+                text-align: right;
+    
+                a{
+                    margin: 10px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+    .line{
+        background-color: white;
+        width: 100%;
+        height: 1px;
+    }
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
