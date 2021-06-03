@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./docs/style.css" />
+    <title>Uber Eats</title>
+  </head>
+  <body>
+    <div class="menu-opened">
+      <!-- TODO MENU OPENed -->
+      <div class="top">
+        <button class="menu-login">Iniciar sesión</button>
+        <div class="menu-links">
+          <a href="#">Crear una cuenta de empresa</a>
+          <a href="#">Añade tu restaurante</a>
+          <a href="#">Regístrate para hacer entregas</a>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="app">
+          <img
+            alt="uber eats app"
+            role="img"
+            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/0c6de4f0b3884eb89b28a29ecbc10d59.svg"
+          />
+          <p>Descubre muchas más opciones en la app.</p>
+        </div>
+        <div class="platforms">
+          <div class="platform">
+            <img src="./img/apple.svg" alt="" />
+            <a href="#">Iphone</a>
+          </div>
+          <div class="platform">
+            <img src="./img/android.svg" alt="" />
+            <a href="#">Android</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="landing">
+      <div class="opacity-div"></div>
+      <img src="./img/bg.png" alt="uber eats" />
+
+      <header>
+        <nav>
+          <div class="logo-menu">
+            <div class="menu">
+              <div class="menu-closed">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+
+            <div class="logo">
+              <img
+                alt="logo"
+                role="img"
+                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ee037401cb5d31b23cf780808ee4ec1f.svg"
+                width="146"
+                height="24"
+                class="bj d7 db"
+              />
+            </div>
+          </div>
+
+          <div class="header-searchbar">
+            <i class="fas fa-map-marker-alt"></i>
+            <input
+              class="location"
+              type="text"
+              placeholder="Introduce tu dirección de entrega"
+            />
+          </div>
+
+          <button id="login-btn" class="login-btn">Iniciar sesión</button>
+        </nav>
+      </header>
+
+      <div class="content">
+        <h1>¿Tienes hambre? Estás en el lugar indicado</h1>
+
+        <form class="delivery">
+          <div class="searchbar">
+            <i class="fas fa-map-marker-alt"></i>
+            <input
+              class="location"
+              type="text"
+              placeholder="Introduce tu dirección de entrega"
+            />
+          </div>
+
+          <div class="delivery-time">
+            <select name="time">
+              <option><i class="fas fa-clock"></i>Entregar ahora</option>
+              <option>
+                <i class="fas fa-calendar-day"></i>Programar para más tarde
+              </option>
+            </select>
+          </div>
+
+          <button class="submit-btn">Buscar comida</button>
+        </form>
+
+        <p><a href="#">Iniciar sesión</a> para consultar sus direcciones</p>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="app-banner">
+        <div class="app-div">
+          <img
+            alt="uber eats app"
+            role="img"
+            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/0c6de4f0b3884eb89b28a29ecbc10d59.svg"
+          />
+          <p>Descubre muchas más opciones en la app.</p>
+        </div>
+
+        <div class="platforms">
+          <div class="platform">
+            <img src="./img/apple.svg" alt="" />
+            <a href="#">Iphone</a>
+          </div>
+          <div class="platform">
+            <img src="./img/android.svg" alt="" />
+            <a href="#">Android</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img
+            alt="Proporciona comida a tus empleados"
+            role="img"
+            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cef389b486cb4827e6ba007f26ebddab.svg"
+          />
+          <h2>Proporciona comida a tus empleados</h2>
+          <a href="#">Crea tu cuenta de empresa</a>
+        </div>
+        <div class="card">
+          <img
+            alt="Tu restaurante, a domicilio"
+            role="img"
+            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/7f56b34e6c253cb54a35bacf5150dde9.svg"
+          />
+          <h2>Tu restaurante, a domicilio</h2>
+          <a href="#">Añade tu restaurante</a>
+        </div>
+        <div class="card">
+          <img
+            alt="Reparte con Uber&nbsp;Eats"
+            role="img"
+            src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/84d6770ca439c4b1ba2d6f53adc1d039.svg"
+          />
+          <h2>Reparte con Uber Eats</h2>
+          <a href="#">Registrate para hacer entregas</a>
+        </div>
+      </div>
+
+      <div class="cities">
+        <div class="title1">
+          <h1>Ciudades cerca de mí</h1>
+          <a href="#">Ver lista con más de 500 ciudades</a>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12544753.908386769!2d-12.713213313811801!3d39.85891277848393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc42e3783261bc8b%3A0xa6ec2c940768a3ec!2zRXNwYcOxYQ!5e0!3m2!1ses-419!2sco!4v1621972999225!5m2!1ses-419!2sco"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="grid">
+          <p>A Coruña</p>
+          <p>Albacete</p>
+          <p>Alicante</p>
+          <p>Almería</p>
+          <p>Avilés</p>
+          <p>Barcelona</p>
+          <p>Bilbao</p>
+          <p>Castellón</p>
+          <p>Córdoba</p>
+          <p>Girona</p>
+          <p>Granada</p>
+          <p>Ibiza</p>
+          <p>Jerez</p>
+          <p>Lleida</p>
+          <p>Logroño</p>
+          <p>Madrid</p>
+          <p>Málaga</p>
+          <p>Murcia</p>
+          <p>San Sebastián</p>
+          <p>Santander</p>
+          <p>Sevilla</p>
+          <p>Tarragona</p>
+          <p>Valencia</p>
+          <p>Zaragoza</p>
+        </div>
+
+        <div class="title2">
+          <h1 class="city-title">
+            Países en los que está disponible Uber Eats
+          </h1>
+          <div class="grid">
+            <p>Estados Unidos</p>
+            <p>España</p>
+            <p>Brasil</p>
+            <p>México</p>
+            <p>Francia</p>
+            <p>Japón</p>
+            <p>Canadá</p>
+            <p>Australia</p>
+            <p>Polonia</p>
+            <p>Reino Unido</p>
+            <p>Italia</p>
+            <p>Portugal</p>
+            <p>Suiza</p>
+            <p>Chile</p>
+            <p>Nueva Zelanda</p>
+            <p>Taiwán (ROC)</p>
+            <p>Sudáfrica</p>
+            <p>Bélgica</p>
+            <p>Ecuador</p>
+            <p>Irlanda</p>
+            <p>Sri Lanka</p>
+            <p>Suecia</p>
+            <p>República Dominicana</p>
+            <p>Guatemala</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="first-part">
+        <div class="app">
+          <div class="logo">
+            <img
+              alt="Uber Eats"
+              role="img"
+              src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/c266ad32e5e88af804b3a1b6b60098f9.svg"
+              width="146"
+              height="24"
+              class="bj d7 g4"
+            />
+          </div>
+          <div class="stores">
+            <a
+              href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277"
+              ><img
+                alt="App Store"
+                role="img"
+                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/74bc8c62232b4ec930dddbde06649f71.svg"
+                class="store"
+            /></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ubercab.eats"
+              ><img
+                alt="Google Play"
+                role="img"
+                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d34417d6744835960200e4c5680c38ec.png"
+                class="store"
+            /></a>
+          </div>
+        </div>
+
+        <div class="about-help">
+          <div class="about">
+            <a href="#" class="bold">Acerca de Uber Eats</a>
+            <a href="#">Leer nuestro blog</a>
+            <a href="#">Crea una cuenta de empresa</a>
+            <a href="#">Añade tu restaurante</a>
+            <a href="#">Regístrate para hacer entregas</a>
+          </div>
+
+          <div class="help">
+            <a href="#" class="bold">Obtener ayuda</a>
+            <a href="#">Ver todas las ciudades</a>
+            <a href="#">Ver todos los países</a>
+            <a href="#">Restaurantes cercanos</a>
+            <a href="#">Ahorra en tu primer pedido</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="second-part">
+        <div class="social-terms">
+          <div class="social">
+            <div class="icon">
+              <a href="//www.facebook.com/ubereats">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDYwLjczNCA2MC43MzMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggZD0iTTU3LjM3OCwwLjAwMUgzLjM1MkMxLjUwMiwwLjAwMSwwLDEuNSwwLDMuMzUzdjU0LjAyNmMwLDEuODUzLDEuNTAyLDMuMzU0LDMuMzUyLDMuMzU0aDI5LjA4NlYzNy4yMTRoLTcuOTE0di05LjE2N2g3LjkxNCAgIHYtNi43NmMwLTcuODQzLDQuNzg5LTEyLjExNiwxMS43ODctMTIuMTE2YzMuMzU1LDAsNi4yMzIsMC4yNTEsNy4wNzEsMC4zNnY4LjE5OGwtNC44NTQsMC4wMDJjLTMuODA1LDAtNC41MzksMS44MDktNC41MzksNC40NjIgICB2NS44NTFoOS4wNzhsLTEuMTg3LDkuMTY2aC03Ljg5MnYyMy41MmgxNS40NzVjMS44NTIsMCwzLjM1NS0xLjUwMywzLjM1NS0zLjM1MVYzLjM1MUM2MC43MzEsMS41LDU5LjIzLDAuMDAxLDU3LjM3OCwwLjAwMXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"
+                />
+              </a>
+            </div>
+            <div class="icon">
+              <a href="//twitter.com/ubereats">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTUxMiw5Ny4yNDhjLTE5LjA0LDguMzUyLTM5LjMyOCwxMy44ODgtNjAuNDgsMTYuNTc2YzIxLjc2LTEyLjk5MiwzOC4zNjgtMzMuNDA4LDQ2LjE3Ni01OC4wMTYgICAgYy0yMC4yODgsMTIuMDk2LTQyLjY4OCwyMC42NC02Ni41NiwyNS40MDhDNDExLjg3Miw2MC43MDQsMzg0LjQxNiw0OCwzNTQuNDY0LDQ4Yy01OC4xMTIsMC0xMDQuODk2LDQ3LjE2OC0xMDQuODk2LDEwNC45OTIgICAgYzAsOC4zMiwwLjcwNCwxNi4zMiwyLjQzMiwyMy45MzZjLTg3LjI2NC00LjI1Ni0xNjQuNDgtNDYuMDgtMjE2LjM1Mi0xMDkuNzkyYy05LjA1NiwxNS43MTItMTQuMzY4LDMzLjY5Ni0xNC4zNjgsNTMuMDU2ICAgIGMwLDM2LjM1MiwxOC43Miw2OC41NzYsNDYuNjI0LDg3LjIzMmMtMTYuODY0LTAuMzItMzMuNDA4LTUuMjE2LTQ3LjQyNC0xMi45MjhjMCwwLjMyLDAsMC43MzYsMCwxLjE1MiAgICBjMCw1MS4wMDgsMzYuMzg0LDkzLjM3Niw4NC4wOTYsMTAzLjEzNmMtOC41NDQsMi4zMzYtMTcuODU2LDMuNDU2LTI3LjUyLDMuNDU2Yy02LjcyLDAtMTMuNTA0LTAuMzg0LTE5Ljg3Mi0xLjc5MiAgICBjMTMuNiw0MS41NjgsNTIuMTkyLDcyLjEyOCw5OC4wOCw3My4xMmMtMzUuNzEyLDI3LjkzNi04MS4wNTYsNDQuNzY4LTEzMC4xNDQsNDQuNzY4Yy04LjYwOCwwLTE2Ljg2NC0wLjM4NC0yNS4xMi0xLjQ0ICAgIEM0Ni40OTYsNDQ2Ljg4LDEwMS42LDQ2NCwxNjEuMDI0LDQ2NGMxOTMuMTUyLDAsMjk4Ljc1Mi0xNjAsMjk4Ljc1Mi0yOTguNjg4YzAtNC42NC0wLjE2LTkuMTItMC4zODQtMTMuNTY4ICAgIEM0ODAuMjI0LDEzNi45Niw0OTcuNzI4LDExOC40OTYsNTEyLDk3LjI0OHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"
+                />
+              </a>
+            </div>
+            <div class="icon">
+              <a href="//instagram.com/ubereats">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMSA1MTEuOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNTEwLjk0OTIxOSAxNTAuNWMtMS4xOTkyMTktMjcuMTk5MjE5LTUuNTk3NjU3LTQ1Ljg5ODQzOC0xMS44OTg0MzgtNjIuMTAxNTYyLTYuNS0xNy4xOTkyMTktMTYuNS0zMi41OTc2NTctMjkuNjAxNTYyLTQ1LjM5ODQzOC0xMi44MDA3ODEtMTMtMjguMzAwNzgxLTIzLjEwMTU2Mi00NS4zMDA3ODEtMjkuNS0xNi4yOTY4NzYtNi4zMDA3ODEtMzQuODk4NDM4LTEwLjY5OTIxOS02Mi4wOTc2NTctMTEuODk4NDM4LTI3LjQwMjM0My0xLjMwMDc4MS0zNi4xMDE1NjItMS42MDE1NjItMTA1LjYwMTU2Mi0xLjYwMTU2MnMtNzguMTk5MjE5LjMwMDc4MS0xMDUuNSAxLjVjLTI3LjE5OTIxOSAxLjE5OTIxOS00NS44OTg0MzggNS42MDE1NjItNjIuMDk3NjU3IDExLjg5ODQzOC0xNy4yMDMxMjQgNi41LTMyLjYwMTU2MiAxNi41LTQ1LjQwMjM0MyAyOS42MDE1NjItMTMgMTIuODAwNzgxLTIzLjA5NzY1NyAyOC4zMDA3ODEtMjkuNSA0NS4zMDA3ODEtNi4zMDA3ODEgMTYuMzAwNzgxLTEwLjY5OTIxOSAzNC44OTg0MzgtMTEuODk4NDM4IDYyLjA5NzY1Ny0xLjMwMDc4MSAyNy40MDIzNDMtMS42MDE1NjIgMzYuMTAxNTYyLTEuNjAxNTYyIDEwNS42MDE1NjJzLjMwMDc4MSA3OC4xOTkyMTkgMS41IDEwNS41YzEuMTk5MjE5IDI3LjE5OTIxOSA1LjYwMTU2MiA0NS44OTg0MzggMTEuOTAyMzQzIDYyLjEwMTU2MiA2LjUgMTcuMTk5MjE5IDE2LjU5NzY1NyAzMi41OTc2NTcgMjkuNTk3NjU3IDQ1LjM5ODQzOCAxMi44MDA3ODEgMTMgMjguMzAwNzgxIDIzLjEwMTU2MiA0NS4zMDA3ODEgMjkuNSAxNi4zMDA3ODEgNi4zMDA3ODEgMzQuODk4NDM4IDEwLjY5OTIxOSA2Mi4xMDE1NjIgMTEuODk4NDM4IDI3LjI5Njg3NiAxLjIwMzEyNCAzNiAxLjUgMTA1LjUgMS41czc4LjE5OTIxOS0uMjk2ODc2IDEwNS41LTEuNWMyNy4xOTkyMTktMS4xOTkyMTkgNDUuODk4NDM4LTUuNTk3NjU3IDYyLjA5NzY1Ny0xMS44OTg0MzggMzQuNDAyMzQzLTEzLjMwMDc4MSA2MS42MDE1NjItNDAuNSA3NC45MDIzNDMtNzQuODk4NDM4IDYuMjk2ODc2LTE2LjMwMDc4MSAxMC42OTkyMTktMzQuOTAyMzQzIDExLjg5ODQzOC02Mi4xMDE1NjIgMS4xOTkyMTktMjcuMzAwNzgxIDEuNS0zNiAxLjUtMTA1LjVzLS4xMDE1NjItNzguMTk5MjE5LTEuMzAwNzgxLTEwNS41em0tNDYuMDk3NjU3IDIwOWMtMS4xMDE1NjIgMjUtNS4zMDA3ODEgMzguNS04LjgwMDc4MSA0Ny41LTguNjAxNTYyIDIyLjMwMDc4MS0yNi4zMDA3ODEgNDAtNDguNjAxNTYyIDQ4LjYwMTU2Mi05IDMuNS0yMi41OTc2NTcgNy42OTkyMTktNDcuNSA4Ljc5Njg3Ni0yNyAxLjIwMzEyNC0zNS4wOTc2NTcgMS41LTEwMy4zOTg0MzggMS41cy03Ni41LS4yOTY4NzYtMTAzLjQwMjM0My0xLjVjLTI1LTEuMDk3NjU3LTM4LjUtNS4yOTY4NzYtNDcuNS04Ljc5Njg3Ni0xMS4wOTc2NTctNC4xMDE1NjItMjEuMTk5MjE5LTEwLjYwMTU2Mi0yOS4zOTg0MzgtMTkuMTAxNTYyLTguNS04LjMwMDc4MS0xNS0xOC4zMDA3ODEtMTkuMTAxNTYyLTI5LjM5ODQzOC0zLjUtOS03LjY5OTIxOS0yMi42MDE1NjItOC43OTY4NzYtNDcuNS0xLjIwMzEyNC0yNy0xLjUtMzUuMTAxNTYyLTEuNS0xMDMuNDAyMzQzcy4yOTY4NzYtNzYuNSAxLjUtMTAzLjM5ODQzOGMxLjA5NzY1Ny0yNSA1LjI5Njg3Ni0zOC41IDguNzk2ODc2LTQ3LjUgNC4xMDE1NjItMTEuMTAxNTYyIDEwLjYwMTU2Mi0yMS4xOTkyMTkgMTkuMjAzMTI0LTI5LjQwMjM0MyA4LjI5Njg3Ni04LjUgMTguMjk2ODc2LTE1IDI5LjM5ODQzOC0xOS4wOTc2NTcgOS0zLjUgMjIuNjAxNTYyLTcuNjk5MjE5IDQ3LjUtOC44MDA3ODEgMjctMS4xOTkyMTkgMzUuMTAxNTYyLTEuNSAxMDMuMzk4NDM4LTEuNSA2OC40MDIzNDMgMCA3Ni41LjMwMDc4MSAxMDMuNDAyMzQzIDEuNSAyNSAxLjEwMTU2MiAzOC41IDUuMzAwNzgxIDQ3LjUgOC44MDA3ODEgMTEuMDk3NjU3IDQuMDk3NjU3IDIxLjE5OTIxOSAxMC41OTc2NTcgMjkuMzk4NDM4IDE5LjA5NzY1NyA4LjUgOC4zMDA3ODEgMTUgMTguMzAwNzgxIDE5LjEwMTU2MiAyOS40MDIzNDMgMy41IDkgNy42OTkyMTkgMjIuNTk3NjU3IDguODAwNzgxIDQ3LjUgMS4xOTkyMTkgMjcgMS41IDM1LjA5NzY1NyAxLjUgMTAzLjM5ODQzOHMtLjMwMDc4MSA3Ni4zMDA3ODEtMS41IDEwMy4zMDA3ODF6bTAgMCIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTI1Ni40NDkyMTkgMTI0LjVjLTcyLjU5NzY1NyAwLTEzMS41IDU4Ljg5ODQzOC0xMzEuNSAxMzEuNXM1OC45MDIzNDMgMTMxLjUgMTMxLjUgMTMxLjVjNzIuNjAxNTYyIDAgMTMxLjUtNTguODk4NDM4IDEzMS41LTEzMS41cy01OC44OTg0MzgtMTMxLjUtMTMxLjUtMTMxLjV6bTAgMjE2LjgwMDc4MWMtNDcuMDk3NjU3IDAtODUuMzAwNzgxLTM4LjE5OTIxOS04NS4zMDA3ODEtODUuMzAwNzgxczM4LjIwMzEyNC04NS4zMDA3ODEgODUuMzAwNzgxLTg1LjMwMDc4MWM0Ny4xMDE1NjIgMCA4NS4zMDA3ODEgMzguMTk5MjE5IDg1LjMwMDc4MSA4NS4zMDA3ODFzLTM4LjE5OTIxOSA4NS4zMDA3ODEtODUuMzAwNzgxIDg1LjMwMDc4MXptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtNDIzLjg1MTU2MiAxMTkuMzAwNzgxYzAgMTYuOTUzMTI1LTEzLjc0NjA5MyAzMC42OTkyMTktMzAuNzAzMTI0IDMwLjY5OTIxOS0xNi45NTMxMjYgMC0zMC42OTkyMTktMTMuNzQ2MDk0LTMwLjY5OTIxOS0zMC42OTkyMTkgMC0xNi45NTcwMzEgMTMuNzQ2MDkzLTMwLjY5OTIxOSAzMC42OTkyMTktMzAuNjk5MjE5IDE2Ljk1NzAzMSAwIDMwLjcwMzEyNCAxMy43NDIxODggMzAuNzAzMTI0IDMwLjY5OTIxOXptMCAwIiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg=="
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="terms">
+            <a href="#">Politica de privacidad</a>
+            <a href="#">Condiciones</a>
+            <a href="#">Precios</a>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            Este sitio está protegido por reCAPTCHA y se aplican las Condiciones
+            de servicio y la Política de privacidad de Google.
+          </p>
+          <p>© 2021 Uber Technologies Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./docs/script.js"></script>
+  </body>
+</html>
